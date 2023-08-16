@@ -10,12 +10,7 @@ export function App() {
       <FollowCard isFollowing={false} userName="omidnikrah">
         Torino
       </FollowCard>
-      <FollowCard isFollowing userName="omidnikrah">
-        Masto
-      </FollowCard>
-      <FollowCard isFollowing userName="omidnikrah">
-        Donte
-      </FollowCard>
+   
     </section>
   );
 }

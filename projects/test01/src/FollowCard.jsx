@@ -1,6 +1,10 @@
-import "./FollowCard.css";
+import "./App.css";
 
-export function FollowCard({children, userName, isFollowing }) {
+export function FollowCard({ children, userName, isFollowing }) {
+  const text = isFollowing ? "siguiendo" : "seguir";
+  const buttonClassName = isFollowing
+    ? "test-followCard-button is-following"
+    : "test-followCard-button";
   return (
     <article className="test-followCard">
       <header className="test-followCard-header">
@@ -15,7 +19,7 @@ export function FollowCard({children, userName, isFollowing }) {
         </div>
       </header>
       <aside>
-        <button className="test-followCard-button">Follow</button>
+        <button className={buttonClassName}>{text}</button>
       </aside>
     </article>
   );
